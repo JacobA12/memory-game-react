@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 
-function GameBoard() {
+function CardGrid() {
   
 }
 
-export default GameBoard;
+export default CardGrid;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
-import GameBoard from './GameBoard';
-import ScoreBoard from './ScoreBoard';
+import CardGrid from './CardGrid';
 import './styles/App.css'
 
 function App() {
