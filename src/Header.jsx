@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./styles/Header.css";
 
-function Header(props) {
+const Header = (props) => {
   return (
     <div id="header">
       <div id="header-left-section">
@@ -20,7 +20,7 @@ function Header(props) {
       </div>
     </div>
   );
-}
+};
 
 Header.propTypes = {
   score: PropTypes.number,

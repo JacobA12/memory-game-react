@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import "./styles/Card.css";
 
-function Card(props) {
+const Card = (props) => {
   const [wasClicked, setWasClicked] = useState(false);
 
   const handleClick = () => {
@@ -30,7 +30,7 @@ function Card(props) {
       </span>
     </div>
   );
-}
+};
 
 Card.propTypes = {
   image: PropTypes.string,

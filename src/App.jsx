@@ -3,7 +3,7 @@ import Header from "./Header";
 import CardGrid from "./CardGrid";
 import "./styles/App.css";
 
-function App() {
+const App = () => {
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [reset, setReset] = useState(true);
@@ -31,6 +31,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
 export default App;

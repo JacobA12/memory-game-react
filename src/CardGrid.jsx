@@ -15,7 +15,7 @@ import Shieldon from "./assets/images/Shieldon.png";
 import PropTypes from "prop-types";
 import "./styles/CardGrid.css";
 
-function CardGrid(props) {
+const CardGrid = (props) => {
   const cards = [
     { image: Arrokuda, name: "Arrokuda" },
     { image: Cinderance, name: "Cinderance" },
@@ -66,7 +66,7 @@ function CardGrid(props) {
       })}
     </div>
   );
-}
+};
 
 CardGrid.propTypes = {
   reset: PropTypes.bool,
