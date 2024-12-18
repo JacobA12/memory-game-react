@@ -37,10 +37,12 @@ const CardGrid = (props) => {
 
   const shuffleArray = (array) => {
     let shuffledArray = array.slice(0);
-    for (let index = 0; index < shuffledArray.length; index++) {
-      const j = (math.floor(Math.random() * shuffledArray.length)[
-        (shuffledArray[index], shuffledArray[j])
-      ] = [shuffledArray[j], shuffledArray[index]]);
+    for (let i = 0; i < shuffledArray.length; i++) {
+      const j = Math.floor(Math.random() * shuffledArray.length);
+      [shuffledArray[i], shuffledArray[j]] = [
+        shuffledArray[j],
+        shuffledArray[i],
+      ];
     }
     return shuffledArray;
   };
@@ -73,4 +75,5 @@ CardGrid.propTypes = {
   endCurrentStage: PropTypes.func,
   incrementScore: PropTypes.func,
 };
+
 export default CardGrid;

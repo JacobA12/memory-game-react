@@ -8,7 +8,7 @@ const App = () => {
   const [bestScore, setBestScore] = useState(0);
   const [reset, setReset] = useState(true);
 
-  const endCurrentState = () => {
+  const endCurrentStage = () => {
     if (score > bestScore) {
       setBestScore(score);
     }
@@ -26,7 +26,7 @@ const App = () => {
       <Header score={score} bestScore={bestScore} />
       <CardGrid
         reset={reset}
-        endCurrentState={endCurrentState}
+        endCurrentStage={endCurrentStage}
         incrementScore={incrementScore}
       />
     </div>

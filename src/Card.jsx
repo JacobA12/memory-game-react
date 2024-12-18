@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./styles/Card.css";
 
@@ -10,7 +10,7 @@ const Card = (props) => {
     if (wasClicked) {
       props.endCurrentStage();
     } else {
-      props.incrementScore;
+      props.incrementScore();
     }
     props.randomizeCards();
   };
