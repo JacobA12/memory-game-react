@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import "./Card.css";
+import "./styles/Card.css";
 
 function Card(props) {
   const [wasClicked, setWasClicked] = useState(false);
