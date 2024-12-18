@@ -1,15 +1,34 @@
-import React, { useState } from 'react';
-import Header from './Header';
-import CardGrid from './CardGrid';
-import './styles/App.css'
+import React, { useState } from "react";
+import Header from "./Header";
+import CardGrid from "./CardGrid";
+import "./styles/App.css";
 
 function App() {
   const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
+  const [reset, setReset] = useState(true);
+
+  const endCurrentState = () => {
+    if (score > bestScore) {
+      setBestScore(score);
+    }
+    setScore(0);
+    setReset(true);
+  };
+
+  const incrementScore = () => {
+    setScore(() => score + 1);
+    setReset(false);
+  };
 
   return (
-    <div className="header">
-      <Header />
-      <ScoreBoard />
+    <div className="App">
+      <Header score={score} bestScore={bestScore} />
+      <CardGrid
+        reset={reset}
+        endCurrentState={endCurrentState}
+        incrementScore={incrementScore}
+      />
     </div>
   );
 }
