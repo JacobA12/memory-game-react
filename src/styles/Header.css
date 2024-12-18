@@ -6,8 +6,8 @@
 	margin-right: 0px;
 	margin-bottom: 20px;
 	padding: 10px;
-	background-image: linear-gradient(black, rgb(62, 102, 35));
-	color: darkgoldenrod;
+	background-image: linear-gradient(to right,rgb(255, 0, 0), rgb(255, 255, 255));
+	color: rgb(0, 0, 0);
 	font-family: 'Acme';
 }
 

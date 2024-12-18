@@ -4,7 +4,7 @@
 	width: 280px;
 	height: 350px;
 	overflow: hidden;
-	background-color: rgb(138, 182, 97);
+	background-color: rgba(227, 0, 0, 0.888);
 	border-radius: 15px;
 	font-size: 23px;
 	font-family: 'Galada';
@@ -13,7 +13,7 @@
 
 .card:hover {
 	cursor: pointer;
-	box-shadow: 0px 0px 40px darkgoldenrod;
+	box-shadow: 0px 0px 40px rgb(255, 255, 255);
 }
 
 .card img {
