@@ -39,7 +39,3 @@ This project was created as part of The Odin Project curriculum, which aims to t
     ```
 
 5.  Open your browser and navigate to the address provided in the terminal (usually `http://localhost:5173/`).
-
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
